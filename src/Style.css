@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
 .scorePage {
@@ -21,7 +22,7 @@ body {
 
 .quiz {
     background-color: #E3A5C7;
-    width: 80%;
+    width: 90%;
     max-width: 600px;
     border-radius: 10px;
     padding: 20px;
@@ -30,12 +31,12 @@ body {
 }
 
 .quiz h1 {
-    font-size: 24px;
+    font-size: 2rem;
     color: #4A235A;
 }
 
 .quiz h3 {
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .quiz ul {
@@ -54,6 +55,7 @@ body {
     width: 100%;
     text-align: center;
     transition: all 0.3s ease-in-out;
+    font-size: 1.1rem;
 }
 
 .quiz ul li.selected {
@@ -74,7 +76,7 @@ body {
     color: black;
     border: 1px solid black;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     transition: 0.3s;
 }
 
@@ -83,34 +85,50 @@ body {
     border: 2px solid plum;
 }
 
-/* Responsive Design */
+/* Fully Responsive Adjustments */
 @media screen and (max-width: 768px) {
     .quiz {
-        width: 90%;
+        width: 95%;
+    }
+
+    .quiz h1 {
+        font-size: 1.8rem;
+    }
+
+    .quiz h3 {
+        font-size: 1.3rem;
+    }
+
+    .quiz ul li {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .quiz button {
+        font-size: 0.9rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .quiz {
-        width: 95%;
+        width: 98%;
         padding: 15px;
     }
 
     .quiz h1 {
-        font-size: 20px;
+        font-size: 1.5rem;
     }
 
     .quiz h3 {
-        font-size: 18px;
+        font-size: 1.2rem;
     }
 
     .quiz ul li {
-        padding: 10px;
-        font-size: 16px;
+        font-size: 0.9rem;
+        padding: 8px;
     }
 
     .quiz button {
-        width: 90%;
-        font-size: 14px;
+        font-size: 0.85rem;
     }
 }
